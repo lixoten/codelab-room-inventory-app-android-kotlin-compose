@@ -66,3 +66,9 @@ object AppViewModelProvider {
  */
 fun CreationExtras.inventoryApplication(): InventoryApplication =
     (this[AndroidViewModelFactory.APPLICATION_KEY] as InventoryApplication)
+
+fun CreationExtras.xxx(): InventoryApplication {
+    val application = (this[AndroidViewModelFactory.APPLICATION_KEY] as InventoryApplication)
+    return application
+}
+
